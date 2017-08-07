@@ -46,9 +46,9 @@ class NMEAModule:
         self.obj_buffer = []
 
     def close(self):
-	'''close the device'''
+        '''close the device'''
         self.dev.close()
-	self.dev = None
+        self.dev = None
 
     def set_debug(self, debug_level):
         '''set debug level'''
@@ -60,7 +60,7 @@ class NMEAModule:
             print(msg)
 
     def set_logfile(self, logfile, append=False):
-	'''setup logging to a file'''
+        '''setup logging to a file'''
         if self.log is not None:
             self.log.close()
             self.log = None
